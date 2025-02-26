@@ -16,7 +16,7 @@ public class SpringBean7 {
         System.out.println("SpringBean7 constructor");
     }
 
-    @Autowired
+    @Autowired(required = false)
     public void setSpringBean5(SpringBean5 springBean5) {
         this.springBean5 = springBean5;
     }
@@ -27,7 +27,7 @@ public class SpringBean7 {
     }
 
     @Autowired
-    public void setSpringBean7(SpringBean8 springBean8) {
+    public void setSpringBean8(SpringBean8 springBean8) {
         this.springBean8 = springBean8;
     }
 
