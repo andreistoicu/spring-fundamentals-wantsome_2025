@@ -10,6 +10,7 @@ public class SpringBean7 {
 
     private SpringBean5 springBean5;
     private ServiceBean serviceBean;
+    private SpringBean8 springBean8;
 
     public SpringBean7() {
         System.out.println("SpringBean7 constructor");
@@ -25,10 +26,16 @@ public class SpringBean7 {
         this.serviceBean = serviceBean;
     }
 
+    @Autowired
+    public void setSpringBean7(SpringBean8 springBean8) {
+        this.springBean8 = springBean8;
+    }
+
 
     @PostConstruct
     public void doSomething() {
         System.out.println("SpringBean7.doSomething()");
         springBean5.doSomething();
+        springBean8.getIndex();
     }
 }
