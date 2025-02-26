@@ -11,8 +11,4 @@ public class SpringBean3 {
         System.out.println("SpringBean3 constructor");
     }
 
-    @PreDestroy
-    void destroy() {
-        System.out.println("AppConfig destroy method in springBean 3");
-    }
 }
