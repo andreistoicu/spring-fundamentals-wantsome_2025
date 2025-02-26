@@ -30,10 +30,10 @@ public class AppConfig {
         System.out.println("AppConfig post construct: " + dataBaseName + " " + databaseUser + " " + databasePassword);
     }
 
-    @Bean
-    public SpringBean2 springBean2() {
-        return new SpringBean2();
-    }
+    /*@Bean
+    public ServiceBean springBean2() {
+        return new ServiceBean();
+    }*/
 
     @PreDestroy
     void destroy() {

@@ -6,4 +6,5 @@ Define SpringBean2 with @Service annotation
 Define SpringBean3 with @Repository annotation
 Define SpringBean4 in another package
 
-2.Create
+2.Create 2 beans SpringBean5 and SpringBean6 where SpringBean5 will be injected into SpringBean6 via **Constructor Injection**
+Create SpringBean7 where SpringBean5 will be injected via **Setter Injection**
