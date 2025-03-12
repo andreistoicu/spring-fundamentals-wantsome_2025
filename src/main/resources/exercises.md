@@ -15,3 +15,31 @@ Create SpringBean7 where SpringBean5 will be injected via **Setter Injection**
 - implement interfaceMethod() to print a different message
 
 5. Create a Autowired with list of BeanInterface and call interfaceMethod() on each of them.
+
+**HTML**
+
+1.
+A title "My First HTML Page"
+A heading (h1) with the text "Welcome to My Page"
+A paragraph with the text "This is my first HTML page. I'm learning how to create web pages using HTML."
+
+Create a HTML document that includes:
+first html
+- a heading(h2) with the text "My Favorite Fruits"
+- an unordered list of your three favorite fruits
+
+second html
+- a heading(h2) with the text "Useful Links"
+- 3 hiperlinks to your favorite websites. Use descriptive text for the links.
+
+3rd html 
+ - a heading(h2) with the text "My favorite animal"
+ - an image of your favorite animal. Use the alt attribute to provide alternative text for the image.
+
+4rd html
+- a heading(h2) with the text "My daily routine"
+- an ordered list with at least 3 items representing the daily routine.
+- Within one of the list items, include a nested unordered list with sub-tasks or activities.
+
+
+
