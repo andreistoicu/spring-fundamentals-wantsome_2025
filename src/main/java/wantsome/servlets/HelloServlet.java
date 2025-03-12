@@ -1,4 +1,4 @@
-package org.example.mvc.servlets;
+package wantsome.servlets;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -26,13 +26,15 @@ public class HelloServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
-    @Override protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    /*@Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         response.setContentType("text/html");
         PrintWriter out= response.getWriter();
         out.println("<html><body>");
         out.println("<h1>Hello, " + name + "!</h1>");
-        out.println("</body></html>"); }
+        out.println("</body></html>");
+    }*/
 
     @Override
     public void destroy() {

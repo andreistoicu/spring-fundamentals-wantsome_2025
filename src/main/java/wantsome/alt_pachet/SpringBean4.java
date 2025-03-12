@@ -1,4 +1,4 @@
-package alt_pachet;
+package wantsome.alt_pachet;
 
 import org.springframework.stereotype.Repository;
 

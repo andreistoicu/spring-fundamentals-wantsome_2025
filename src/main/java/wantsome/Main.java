@@ -1,6 +1,7 @@
-package org.example;
+package wantsome;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import wantsome.example.AppConfig;
 
 public class Main {
     public static void main(String[] args) {

@@ -8,9 +8,9 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--Component scannning-->
-    <context:component-scan base-package="alt_pachet" />
+    <context:component-scan base-package="wantsome.alt_pachet" />
 
     <!--Define additional beans here-->
-    <bean id="SpringBean4" class="alt_pachet.SpringBean4"/>
+    <bean id="SpringBean4" class="wantsome.alt_pachet.SpringBean4"/>
 
 </beans>

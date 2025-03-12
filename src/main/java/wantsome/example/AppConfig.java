@@ -1,4 +1,4 @@
-package org.example;
+package wantsome.example;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @Configuration
-@ComponentScan("org.example")
+@ComponentScan("wantsome.example")
 @PropertySource("classpath:application.properties")
 @ImportResource("classpath:applicationContext.xml")
 public class AppConfig {

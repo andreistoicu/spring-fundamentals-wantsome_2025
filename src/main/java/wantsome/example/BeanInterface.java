@@ -1,4 +1,4 @@
-package org.example;
+package wantsome.example;
 
 public interface BeanInterface {
     void interfaceMethod();
