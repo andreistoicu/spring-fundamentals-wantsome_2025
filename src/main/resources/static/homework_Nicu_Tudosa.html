@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission</title>
+</head>
+<body>
+    <form method="post" action="/submit">
+        <label for="name">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <fieldset>
+            <legend>Subscription Plan:</legend>
+            <input type="radio" id="basic" name="plan" value="basic" required>
+            <label for="basic">Basic</label>
+
+            <input type="radio" id="standard" name="plan" value="standard">
+            <label for="standard">Standard</label>
+
+            <input type="radio" id="premium" name="plan" value="premium">
+            <label for="premium">Premium</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <input type="checkbox" id="tech" name="interests" value="tech">
+            <label for="tech">Technology</label>
+
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="arts" name="interests" value="interests">
+            <label for="arts">Arts</label>
+        </fieldset>
+        <br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
