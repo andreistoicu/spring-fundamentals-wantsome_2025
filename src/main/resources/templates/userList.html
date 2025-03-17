@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Users list</title>
+    </head>
+    <body>
+        <h1>Users List</h1>
+        <ul>
+            <li th:each="user: ${users}" th:text="${user}" > Users </li>
+        </ul>
+    </body>
+</html>
