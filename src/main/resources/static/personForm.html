@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Form exercise</title>
+</head>
+<body>
+  <form action="/submitForm" method="post">
+      <!-- First Name input -->
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+      <br><br>
+
+      <!-- Last Name input -->
+      <label for="name">Last Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+
+      <!-- Email input -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <!-- Password input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+
+      <!-- Date of Birth input -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      <br><br>
+
+      <!-- Radio buttons for Subscription Plan -->
+      <label>Subscription Plan:</label>
+      <input type="radio" id="basic" name="plan" value="basic" >
+      <label for="basic">Basic</label>
+      <input type="radio" id="standard" name="plan" value="standard">
+      <label for="standard">Standard</label>
+      <input type="radio" id="premium" name="plan" value="premium">
+      <label for="premium">Premium</label>
+      <br><br>
+
+      <!-- Checkboxes for Interests -->
+      <label>Interests:</label><br>
+      <input type="checkbox" id="tech" name="interests" value="tech">
+      <label for="tech">Technology</label><br>
+      <input type="checkbox" id="sports" name="interests" value="sports">
+      <label for="sports">Sports</label><br>
+      <input type="checkbox" id="arts" name="interests" value="arts">
+      <label for="arts">Arts</label><br><br>
+
+      <!-- Select dropdown for Country -->
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+      </select>
+      <br><br>
+
+      <!-- Submit button -->
+      <button type="submit">Register</button>
+  </form>
+</body>
+</html>
