@@ -54,3 +54,6 @@ Include a group of checkboxes for "Interests" with options "Technology", "Sports
 each with the name attribute set to "interests" and unique id and value attributes ("tech", "sports", "arts").
 Finally, add a button element of type "submit" with the text "Register".
 
+MVC2.1 Create a Thymeleaf template that displays a list of Products (id, name and price (double))
+and a dynamic title and the corresponding controller method that returns the list of products.
+
