@@ -1,4 +1,4 @@
-package wantsome.layered.web_controllers.controller;
+package com.wantsome.layered.web_controllers.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 

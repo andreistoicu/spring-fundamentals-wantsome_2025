@@ -1,8 +1,8 @@
-package wantsome.layered.service;
+package com.wantsome.layered.service;
 
 import org.springframework.stereotype.Service;
-import wantsome.layered.domain_dao.User;
-import wantsome.layered.domain_dao.UserRepository;
+import com.wantsome.layered.domain_dao.User;
+import com.wantsome.layered.domain_dao.UserRepository;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package wantsome.layered.domain_dao;
+package com.wantsome.layered.domain_dao;
 
 public class User {
     private Long id;

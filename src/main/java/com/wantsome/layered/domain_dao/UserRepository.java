@@ -1,4 +1,4 @@
-package wantsome.layered.domain_dao;
+package com.wantsome.layered.domain_dao;
 
 import org.springframework.stereotype.Repository;
 

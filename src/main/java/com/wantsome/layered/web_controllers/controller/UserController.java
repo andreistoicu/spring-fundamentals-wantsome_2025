@@ -1,9 +1,9 @@
-package wantsome.layered.web_controllers.controller;
+package com.wantsome.layered.web_controllers.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import wantsome.layered.service.UserService;
+import com.wantsome.layered.service.UserService;
 
 @Controller
 public class UserController {
