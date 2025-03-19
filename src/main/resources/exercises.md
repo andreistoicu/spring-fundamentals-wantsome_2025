@@ -57,3 +57,5 @@ Finally, add a button element of type "submit" with the text "Register".
 MVC2.1 Create a Thymeleaf template that displays a list of Products (id, name and price (double))
 and a dynamic title and the corresponding controller method that returns the list of products.
 
+MVC2.3 Create a form to save Products, a result page to display the saved products and the corresponding controller methods.
+
