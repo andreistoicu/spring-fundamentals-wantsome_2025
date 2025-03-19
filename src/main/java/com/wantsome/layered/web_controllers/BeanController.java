@@ -14,6 +14,8 @@ public class BeanController {
 
     //@RequestMapping(method = RequestMethod.POST, value= "/submitForm")
     @PostMapping("/submitForm")
+    //@DeleteMapping("/url")
+    //@PutMapping("/url")
     public String submitForm(@RequestParam("name") String name , @RequestParam("email") String email) {
         System.out.println("Name: " + name);
         System.out.println("Email:" + email);

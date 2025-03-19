@@ -1,9 +1,20 @@
 package com.wantsome.layered.domain_dao;
 
+import com.wantsome.layered.domain_dao.constraints.NoNumbers;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class User {
     private Long id;
+
+    @NotBlank(message = "Name is mandatory- ce mesaj vrem noi")
+    @Size(min = 2, max = 30, message = "Name must be between 2 and 30 characters - mesaj configurabil cum vrem noi")
     private String name;
+    @NoNumbers
     private String email;
+
+    public User() {
+    }
 
     public User(Long id, String name, String email) {
         this.id = id;

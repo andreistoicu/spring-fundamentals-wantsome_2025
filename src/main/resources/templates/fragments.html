@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragments title</title>
+</head>
+<body>
+    <div th:fragment="nav">
+        <ul>
+            <li> <a th:href="@{/userList}">Users</a> </li>
+            <li> <a th:href="@{/products}">Products</a> </li>
+            <li> <a th:href="@{/productForm}">Back to form</a> </li>
+        </ul>
+    </div>
+
+    <div th:fragment="footer">
+        <footer>
+            <p>2025 Thymeleaf footer example </p>
+        </footer>
+    </div>
+
+</body>
+</html>
