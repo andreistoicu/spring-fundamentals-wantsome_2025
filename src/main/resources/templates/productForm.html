@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Form</title>
+    </head>
+    <body>
+        <h1>Product Form</h1>
+        <form th:action="@{/submitProduct}" th:object="${product}" method="post">
+
+        <div>
+            <label for="name"> Name</label>
+            <input type="text" id="name" th:field="*{name}"/> <br/>
+        </div>
+
+        <div>
+            <label for="price"> Price</label>
+            <input type="text" id="price" th:field="*{price}"/> <br/>
+        </div>
+
+        <div>
+            <label for="available">Available</label>
+            <input type="checkbox" id="available" th:field="*{available}">Available</input>
+        </div>
+
+        <div>
+            <button type="submit">Save</button>
+        </div>
+
+        <div>
+            <a th:href="@{/products}">Go to product list</a>
+        </div>
+
+        </form>
+    </body>
+</html>

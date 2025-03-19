@@ -6,6 +6,9 @@ public class Product {
     private double price;
     private boolean available;
 
+    public Product() {
+    }
+
     public Product(Long id, String name, double price, boolean available) {
         this.id = id;
         this.name = name;
