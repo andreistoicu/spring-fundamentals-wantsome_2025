@@ -59,3 +59,4 @@ and a dynamic title and the corresponding controller method that returns the lis
 
 MVC2.3 Create a form to save Products, a result page to display the saved products and the corresponding controller methods.
 
+DB1. Save a Book entity with columns for id, version, title, price and embeddable Author (name, age) in a database.
