@@ -9,14 +9,14 @@ import javax.annotation.PostConstruct;
 @Controller
 public class CustomerController {
 
-    private CustomerService customerService;
+	private final CustomerService customerService;
 
-    public CustomerController(CustomerService customerService) {
-        this.customerService = customerService;
-    }
+	public CustomerController(CustomerService customerService) {
+		this.customerService = customerService;
+	}
 
     @PostConstruct
-    public void init() {
+    void init() {
         Customer customer = new Customer();
         customer.setName("John Smith");
 

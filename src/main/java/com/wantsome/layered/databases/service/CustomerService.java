@@ -1,8 +1,10 @@
 package com.wantsome.layered.databases.service;
 
+import com.wantsome.layered.databases.dao.Book;
 import com.wantsome.layered.databases.dao.Customer;
 import com.wantsome.layered.databases.dao.CustomerRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class CustomerService {
@@ -13,8 +15,11 @@ public class CustomerService {
         this.customerRepository = customerRepository;
     }
 
+    @Transactional
     public void saveCustomer(Customer customer) {
         customerRepository.save(customer);
+
+        //save new Employee responsible for the Customer
     }
 
     public Customer findById(Long id) {

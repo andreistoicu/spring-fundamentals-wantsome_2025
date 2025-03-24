@@ -11,10 +11,10 @@ public class CustomerRepository {
     private EntityManager entityManager;
 
     public void save(Customer customer) {
-        //entityManager.persist(customer);
+        entityManager.persist(customer);
     }
 
     public Customer findById(Long id) {
-        //return entityManager.find(Customer.class, id);
+        return entityManager.find(Customer.class, id);
     }
 }
