@@ -61,4 +61,3 @@ MVC2.3 Create a form to save Products, a result page to display the saved produc
 
 DB1. Save a Book entity with columns for id, version, title, price and embeddable Author (name, age) in a database.
 
-DB2. Update and findAll on the Book entity.
