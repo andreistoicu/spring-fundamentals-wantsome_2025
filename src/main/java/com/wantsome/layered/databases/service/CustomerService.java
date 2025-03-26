@@ -6,6 +6,8 @@ import com.wantsome.layered.databases.dao.CustomerRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class CustomerService {
 
@@ -24,5 +26,9 @@ public class CustomerService {
 
     public Customer findById(Long id) {
         return customerRepository.findById(id);
+    }
+
+    public List<Customer> findAll(){
+        return customerRepository.findAll();
     }
 }

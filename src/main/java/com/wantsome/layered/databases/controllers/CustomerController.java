@@ -5,6 +5,7 @@ import com.wantsome.layered.databases.service.CustomerService;
 import org.springframework.stereotype.Controller;
 
 import javax.annotation.PostConstruct;
+import java.util.List;
 
 @Controller
 public class CustomerController {
@@ -26,6 +27,12 @@ public class CustomerController {
 
         Customer findedCustomer = customerService.findById(customer.getId());
         System.out.println("Found customer = "  + findedCustomer);
+
+        List<Customer> clients = customerService.findAll();
+
+        for (Customer c : clients) {
+            System.out.println("Found customers by findAll() "  + c);
+        }
 
     }
 }
