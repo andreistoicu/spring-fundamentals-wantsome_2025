@@ -10,6 +10,11 @@ import java.util.List;
 @Controller
 public class CustomerController {
 
+    // enitity manager trebuie delegat in clasa de repository pentru ca sa avem o structura corecta
+    //codul ruleaza si fara o structura corecta insa nu e recomandat sa facem asta
+    /*@PersistenceContext
+    private EntityManager entityManager;*/
+
 	private final CustomerService customerService;
 
 	public CustomerController(CustomerService customerService) {
@@ -33,6 +38,8 @@ public class CustomerController {
         for (Customer c : clients) {
             System.out.println("Found customers by findAll() "  + c);
         }
+
+
 
     }
 }

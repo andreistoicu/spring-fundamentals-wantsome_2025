@@ -5,6 +5,8 @@ import com.wantsome.layered.databases.dao.BookRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BookService {
 
@@ -21,6 +23,12 @@ public class BookService {
 
     public Book findById(Long id) {
         return bookRepository.findById(id);
+    }
+
+    public List<Book> findAll(){
+        return bookRepository.findAll();
+
+        //mai multe operatiuni
     }
 
 }

@@ -6,6 +6,8 @@ import com.wantsome.layered.databases.service.BookService;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Controller;
 
+import java.util.List;
+
 @Controller
 public class BookController {
 
@@ -41,5 +43,11 @@ public class BookController {
         System.out.println("Found book = " + foundBook);
         System.out.println("Found book2 = " + foundBook2);
 
+
+        List<Book> books = bookService.findAll();
+
+        for (Book book : books) {
+            System.out.println("Found books by findAll() "  + book);
+        }
     }
 }

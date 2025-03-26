@@ -1,6 +1,5 @@
 package com.wantsome.layered.databases.service;
 
-import com.wantsome.layered.databases.dao.Book;
 import com.wantsome.layered.databases.dao.Customer;
 import com.wantsome.layered.databases.dao.CustomerRepository;
 import org.springframework.stereotype.Service;
