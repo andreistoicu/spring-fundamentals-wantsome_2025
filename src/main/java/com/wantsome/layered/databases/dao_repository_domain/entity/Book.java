@@ -2,6 +2,8 @@ package com.wantsome.layered.databases.dao_repository_domain.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name="book_table")
 public class Book {
@@ -18,6 +20,13 @@ public class Book {
 
     @Column(name="price", nullable=false)
     private Double price;
+
+    /*@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "book_id", referencedColumnName = "id")
+    private Chapter chapter;*/
+
+    /*@OneToMany(mappedBy="book", cascade=CascadeType.ALL, fetch=FetchType.EAGER, orphanRemoval=true)
+    private List<Chapter> chapter;*/
 
     @Embedded
     private Author author;
