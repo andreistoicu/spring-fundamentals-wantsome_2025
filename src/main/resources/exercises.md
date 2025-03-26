@@ -62,3 +62,7 @@ MVC2.3 Create a form to save Products, a result page to display the saved produc
 DB1. Save a Book entity with columns for id, version, title, price and embeddable Author (name, age) in a database.
 
 DB2. Update and findAll on the Book entity.
+
+DB3. Create an entity for a BankAccount with fields for customerName, accountNo, accountCurrency, 
+amount and a open field. Create the Repository to save and load BankAccount entities. 
+Create the Thymeleaf templates and Controller methods to add a BankAccount and load the BankAccount table.

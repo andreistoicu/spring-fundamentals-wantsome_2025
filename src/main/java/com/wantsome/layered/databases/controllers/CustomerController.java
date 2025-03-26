@@ -1,6 +1,6 @@
 package com.wantsome.layered.databases.controllers;
 
-import com.wantsome.layered.databases.dao_repository_domain.Customer;
+import com.wantsome.layered.databases.dao_repository_domain.entity.Customer;
 import com.wantsome.layered.databases.service.CustomerService;
 import org.springframework.stereotype.Controller;
 

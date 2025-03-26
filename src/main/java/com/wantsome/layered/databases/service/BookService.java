@@ -1,6 +1,6 @@
 package com.wantsome.layered.databases.service;
 
-import com.wantsome.layered.databases.dao_repository_domain.Book;
+import com.wantsome.layered.databases.dao_repository_domain.entity.Book;
 import com.wantsome.layered.databases.dao_repository_domain.BookRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;

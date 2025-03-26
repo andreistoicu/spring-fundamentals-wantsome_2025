@@ -1,6 +1,6 @@
 package com.wantsome.layered.databases.service;
 
-import com.wantsome.layered.databases.dao_repository_domain.Customer;
+import com.wantsome.layered.databases.dao_repository_domain.entity.Customer;
 import com.wantsome.layered.databases.dao_repository_domain.CustomerRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

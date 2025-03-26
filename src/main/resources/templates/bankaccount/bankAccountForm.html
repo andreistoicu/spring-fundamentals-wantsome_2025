@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>New Account</title>
+</head>
+<body>
+<h1>New Account</h1>
+<form th:action="@{/accounts}" th:object="${bankAccount}" method="post">
+  <label for="customerName">Customer Name:</label>
+  <input type="text" id="customerName" th:field="*{customerName}" /><br/>
+  <label for="accountNumber">Account Number:</label>
+  <input type="text" id="accountNumber" th:field="*{accountNumber}" /><br/>
+  <label for="accountCurrency">Account Currency:</label>
+  <input type="text" id="accountCurrency" th:field="*{accountCurrency}" /><br/>
+  <label for="amount">Amount:</label>
+  <input type="number" id="amount" th:field="*{amount}" /><br/>
+  <label for="isOpen">Is Open:</label>
+  <input type="checkbox" id="isOpen" th:field="*{isOpen}" /><br/>
+  <button type="submit">Save</button>
+</form>
+<a th:href="@{/accounts}">Back to Accounts</a>
+</body>
+</html>

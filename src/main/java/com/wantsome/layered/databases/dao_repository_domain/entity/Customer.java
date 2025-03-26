@@ -1,4 +1,4 @@
-package com.wantsome.layered.databases.dao_repository_domain;
+package com.wantsome.layered.databases.dao_repository_domain.entity;
 
 import jakarta.persistence.*;
 

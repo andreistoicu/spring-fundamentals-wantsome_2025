@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bank Accounts</title>
+</head>
+<body>
+<h1>Bank Accounts</h1>
+<a th:href="@{/newBankAccount}">Add New Account</a>
+<table>
+    <thead>
+    <tr>
+        <th>Customer Name</th>
+        <th>Account Number</th>
+        <th>Account Currency</th>
+        <th>Amount</th>
+        <th>Is Open</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="account : ${accounts}">
+        <td th:text="${account.customerName}">Customer Name</td>
+        <td th:text="${account.accountNumber}">Account Number</td>
+        <td th:text="${account.accountCurrency}">Account Currency</td>
+        <td th:text="${account.amount}">Amount</td>
+        <td th:text="${account.isOpen}">Is Open</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

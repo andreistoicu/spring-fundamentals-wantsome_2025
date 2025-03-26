@@ -1,5 +1,6 @@
 package com.wantsome.layered.databases.dao_repository_domain;
 
+import com.wantsome.layered.databases.dao_repository_domain.entity.Book;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
