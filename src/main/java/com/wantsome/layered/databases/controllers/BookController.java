@@ -1,7 +1,7 @@
 package com.wantsome.layered.databases.controllers;
 
-import com.wantsome.layered.databases.dao.Author;
-import com.wantsome.layered.databases.dao.Book;
+import com.wantsome.layered.databases.dao_repository_domain.Author;
+import com.wantsome.layered.databases.dao_repository_domain.Book;
 import com.wantsome.layered.databases.service.BookService;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.wantsome.layered.databases.dao;
+package com.wantsome.layered.databases.dao_repository_domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
