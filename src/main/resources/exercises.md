@@ -66,3 +66,10 @@ DB2. Update and findAll on the Book entity.
 DB3. Create an entity for a BankAccount with fields for customerName, accountNo, accountCurrency, 
 amount and a open field. Create the Repository to save and load BankAccount entities. 
 Create the Thymeleaf templates and Controller methods to add a BankAccount and load the BankAccount table.
+
+SR1. Consider a simple example of a RESTful API for managing a collection of books.
+• Retrieve all books: GET /books
+• Retrieve a single book by ID: GET /books/{id}
+• Create a new book: POST /books
+• Update a book by ID: PUT /books/{id}
+• Delete a book by ID: DELETE /books/{id}
