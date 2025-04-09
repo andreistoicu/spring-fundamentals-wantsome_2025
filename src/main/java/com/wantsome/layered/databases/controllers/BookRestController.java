@@ -48,7 +48,6 @@ public class BookRestController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Book> deleteBookById(@PathVariable("id") Long id) {
-        bookService.findById(id);
         bookService.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
