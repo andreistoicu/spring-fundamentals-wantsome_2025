@@ -32,6 +32,7 @@ public class BookRestController {
     @GetMapping("/{id}")
     public ResponseEntity<Book> getBookById(@PathVariable("id") Long id) {
         Book book = bookService.findById(id);
+        //throw new RuntimeException("Not implemented yet");
 
         if(book == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -41,6 +42,7 @@ public class BookRestController {
     }
 
     @PostMapping("")
+    //@PostMapping(consumes = MediaType.APPLICATION_XML_VALUE, produces = MediaType.APPLICATION_XML_VALUE)
     public ResponseEntity<Book> addBook(@RequestBody Book book) {
         bookService.saveBook(book);
         return new ResponseEntity<>(book, HttpStatus.CREATED);
