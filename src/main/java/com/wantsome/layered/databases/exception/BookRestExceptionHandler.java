@@ -25,4 +25,22 @@ public class BookRestExceptionHandler {
 
         return new ResponseEntity(bookExceptionMessage, HttpStatus.VARIANT_ALSO_NEGOTIATES);
     }
+
+    @ExceptionHandler(NoUseException.class)
+    public ResponseEntity handleNoUseException (){
+        BookExceptionMessage bookExceptionMessage = new BookExceptionMessage(308,
+                "permanent redirect",
+                "permanent redirect of the book");
+
+        return new ResponseEntity(bookExceptionMessage, HttpStatus.PERMANENT_REDIRECT);
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity handleGlobalException (Exception ex){
+        BookExceptionMessage bookExceptionMessage = new BookExceptionMessage(500,
+                ex.getMessage(),
+                "global exception");
+
+        return new ResponseEntity(bookExceptionMessage, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }

@@ -76,3 +76,5 @@ SR1. Consider a simple example of a RESTful API for managing a collection of boo
 
 SR2. Add error handling with Spring REST mechanism of @ControllerAdvice & @ExceptionHandler to return a customized
 exception -"NoBookException" and to manage also global exceptions through Exception class.
+
+SR3. Create another exception and a global exception

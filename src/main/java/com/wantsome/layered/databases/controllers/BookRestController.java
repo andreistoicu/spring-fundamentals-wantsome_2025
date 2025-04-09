@@ -1,6 +1,7 @@
 package com.wantsome.layered.databases.controllers;
 
 import com.wantsome.layered.databases.dao_repository_domain.entity.Book;
+import com.wantsome.layered.databases.exception.NoUseException;
 import com.wantsome.layered.databases.service.BookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -56,9 +57,15 @@ public class BookRestController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Book> updateBook(@PathVariable("id") Long id, @RequestBody Book book) {
+
         if(id == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } else if(id == 300) {
+            throw new RuntimeException("global exception");
+        } else if(id == 400) {
+            throw new NoUseException("no use exception");
         }
+
         bookService.updateBookById(id, book);
         return new ResponseEntity<>(HttpStatus.OK);
     }
