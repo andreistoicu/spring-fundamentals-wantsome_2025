@@ -1,1 +1,0 @@
-docker run -d -e MYSQL_ROOT_PASSWORD=wantsome -e MYSQL_DATABASE=wantsome --name wantsomeDB -p 3307:3306 mysql:8.0

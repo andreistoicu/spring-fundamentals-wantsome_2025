@@ -74,12 +74,6 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!--for xml ussage-->
-        <!--<dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-xml</artifactId>
-            <version>2.16.0</version>
-        </dependency>-->
     </dependencies>
 
     <!--aceasta dependinta nu este obligatorie decat daca nu folosim projectul de tip 'maven' , preales de noi la creare-->
