@@ -1,6 +1,7 @@
 package com.wantsome.controller;
 
 import com.wantsome.domain.Employee;
+import com.wantsome.exception.NoEmployeesException;
 import com.wantsome.service.EmployeeService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +26,7 @@ public class EmployeeController {
 
         if (employees.isEmpty()) {
             System.out.println("No employees are hired");
-            return null;
+            throw new NoEmployeesException("NoEmployeesException");
         }
         return employees;
     }
