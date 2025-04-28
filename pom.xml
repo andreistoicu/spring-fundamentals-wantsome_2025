@@ -74,6 +74,18 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!-- daca doriti sa utilizati postregress spre exemplu, trebuie adaugata o dependinta pentru legatura cu DB-ul de tip postgres -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.5</version>
+        </dependency>
+        <!--for xml ussage-->
+        <!--<dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.16.0</version>
+        </dependency>-->
     </dependencies>
 
     <!--aceasta dependinta nu este obligatorie decat daca nu folosim projectul de tip 'maven' , preales de noi la creare-->
