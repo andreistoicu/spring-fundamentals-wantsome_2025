@@ -18,6 +18,7 @@ public class RestExceptionHandler {
         return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
     }
 
+    @ExceptionHandler(Exception.class)
     public ResponseEntity handleGlobalException(Exception exception){
         ExceptionMessage message = new ExceptionMessage(500,
                 "An unknown exception",
