@@ -28,4 +28,22 @@ public class EmployeeService {
     public Optional<Employee> getEmployee(int id){
         return employeeRepository.findById(id);
     }
+
+    public void updateEmployee(Employee employee, int id){
+        if (employeeRepository.existsById(id)) {
+            employee.setId(id);
+            employeeRepository.save(employee);
+        } else {
+            throw new RuntimeException("Employee not found");
+        }
+    }
+
+    public void deleteEmployeeById(int id){
+        if (employeeRepository.existsById(id)) {
+            employeeRepository.deleteById(id);
+        } else {
+            throw new RuntimeException("Employee not found");
+        }
+    }
+
 }
