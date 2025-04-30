@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 
 //putem utiliza si JpaRepository
 //public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-public interface EmployeeRepository extends CrudRepository<Employee, Long> {
+public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
 }

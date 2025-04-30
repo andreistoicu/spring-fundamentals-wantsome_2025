@@ -3,11 +3,10 @@ package com.wantsome.controller;
 import com.wantsome.domain.Employee;
 import com.wantsome.exception.NoEmployeesException;
 import com.wantsome.service.EmployeeService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 //@RequestMapping("/employee")
@@ -29,6 +28,16 @@ public class EmployeeController {
             throw new NoEmployeesException("NoEmployeesException");
         }
         return employees;
+    }
+
+    @PostMapping("/employee")
+    public void addEmployee(@RequestBody Employee employee){
+        employeeService.addEmployee(employee);
+    }
+
+    @GetMapping("/employee/{id}")
+    public Optional<Employee> getEmployee(@PathVariable int id){
+        return employeeService.getEmployee(id);
     }
 
 }

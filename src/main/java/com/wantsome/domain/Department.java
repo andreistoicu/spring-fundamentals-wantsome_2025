@@ -1,3 +1,4 @@
+/*
 package com.wantsome.domain;
 
 import jakarta.persistence.*;
@@ -9,7 +10,7 @@ import java.util.List;
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long department_id;
     private String name;
     @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
     private List<Employee> employees;
@@ -56,3 +57,4 @@ public class Department {
                 '}';
     }
 }
+*/

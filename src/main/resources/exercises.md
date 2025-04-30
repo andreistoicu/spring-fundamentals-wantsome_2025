@@ -83,8 +83,8 @@ HANDS ON
 SR1. Consider a simple example of a RESTful API for managing a collection of employees.
 - Consider that we have a relationship of Many **employees** to one **department** @ManyToOne
 • Retrieve all employees: GET /employees
-• Retrieve a single employee by ID: GET /employee/{id}
 • Create a new employee: POST /employee
+• Retrieve a single employee by ID: GET /employee/{id}
 • Update an employee by ID: PUT /employee/{id}
 • Delete an employee by ID: DELETE /employee/{id}
 - ExceptionHandler -> @ControllerAdvice
