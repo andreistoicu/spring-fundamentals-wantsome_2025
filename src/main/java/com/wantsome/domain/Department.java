@@ -1,18 +1,20 @@
-/*
 package com.wantsome.domain;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "departments")
+@Table(name = "department")
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long department_id;
+    private long id;
     private String name;
-    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
+
+    @OneToMany(mappedBy = "department",
+               cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     private List<Employee> employees;
 
     public Department() {
@@ -48,6 +50,15 @@ public class Department {
         this.employees = employees;
     }
 
+    //convenience method for @ManyToOne relationship - preferabil de utilizat dar nu obligatoriu
+    /*public void add(Employee employee){
+        if (employees == null) {
+            employees = new ArrayList<>();
+        }
+        employees.add(employee);
+        employee.setDepartment(this);
+    }*/
+
     @Override
     public String toString() {
         return "Department{" +
@@ -57,4 +68,3 @@ public class Department {
                 '}';
     }
 }
-*/

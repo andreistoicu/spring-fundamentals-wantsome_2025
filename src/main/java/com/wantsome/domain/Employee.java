@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "employee")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,17 +14,18 @@ public class Employee {
     private String city;
     private String email;
     private String role;
-    //@ManyToOne
-    //@JoinColumn(name="department_id", nullable=false)
-    //private Department department;
 
-    public Employee(long id, String name, String city, String email, String role/*, Department department*/) {
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @JoinColumn(name="department_id")
+    private Department department;
+
+    public Employee(long id, String name, String city, String email, String role, Department department) {
         this.id = id;
         this.name = name;
         this.city = city;
         this.email = email;
         this.role = role;
-        //this.department = department;
+        this.department = department;
     }
 
     public Employee() {
@@ -71,28 +72,28 @@ public class Employee {
         this.role = role;
     }
 
-    /*public Department getDepartment() {
+    public Department getDepartment() {
         return department;
-    }*/
+    }
 
-    /*public void setDepartment(Department department) {
+    public void setDepartment(Department department) {
         this.department = department;
-    }*/
+    }
 
     @Override
     public String toString() {
-        return "Employee{" + "id=" + id + ", name=" + name + ", city=" + city + ", email=" + email + ", role=" + role + ", department=" /*+ department*/ + '}';
+        return "Employee{" + "id=" + id + ", name=" + name + ", city=" + city + ", email=" + email + ", role=" + role + ", department=" + department + '}';
     }
 
-    /*@Override
+    @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
         return id == employee.id && Objects.equals(name, employee.name) && Objects.equals(city, employee.city) && Objects.equals(email, employee.email) && Objects.equals(role, employee.role) && Objects.equals(department, employee.department);
-    }*/
+    }
 
-    /*@Override
+    @Override
     public int hashCode() {
         return Objects.hash(id, name, city, email, role, department);
-    }*/
+    }
 }
